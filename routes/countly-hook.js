@@ -3,12 +3,15 @@ var router = express.Router();
 
 /* GET users listing. */
 router.post('/platform/ios', function(req, res, next) {
-  console.log('abimbola', req.body)
+  console.log(req.body);
   res.end();
 });
 router.post('/session/count', function(req, res, next) {
-  console.log('session', req.body)
+  console.log(req.body);
   res.end();
 });
 
+router.post('/event-segmentation', function(req, res) {
+  console.log(req.body);
+});
 module.exports = router;
